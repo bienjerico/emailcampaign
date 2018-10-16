@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        *,
+        body {
+            font-family: 'Roboto', Tahoma, Verdana, sans-serif;
+        }
+
+        .r-l-pad {
+            padding-left: 0;
+        }
+
+        .r-r-pad {
+            padding-right: 0;
+        }
+
+        .header-top {
+            position: relative;
+        }
+
+        .header-pic {
+            position: relative;
+        }
+
+        .header-pic img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header-content img {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-weight: 700;
+            font-size: 15vw;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .header-content h3 {
+            font-size: 5vw;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        .txt-color-white {
+            color: #ffffff;
+        }
+
+        .txt-color-blue {
+            color: #0670B2;
+        }
+
+        .subheader-top {
+            background-color: #0670B2;
+            color: #ffffff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .detail-header h3 {
+            color: #0670B2;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .detail-content h4 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .detail-content p {
+            text-align: center;
+        }
+
+        .detail-content .detail-img-1 {
+            margin-top: 20px;
+            background-color: #F9C82D;
+            text-align: center;
+        }
+
+        .detail-content .detail-img-1 img {
+            max-width: 175px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .panel-img {
+            margin-top: 20px;
+            position: relative;
+            background-color: #F9C82D;
+        }
+
+        .panel-img .header {
+            position: relative;
+        }
+
+        .panel-img .header img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .panel-img .detail {
+            /*position: absolute;*/
+            bottom: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .panel-img .detail img {
+            padding-top: 70px;
+            width: 75%;
+            height: auto;
+        }
+
+        .detail-content-2 {
+            position: relative;
+            background-color: #0670B2;
+            color: #ffffff;
+        }
+
+        .detail-content-2 h4 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .detail-content-2 p {
+            text-align: center;
+        }
+
+        .detail-content-2 .header {
+            position: relative;
+        }
+
+        .detail-content-2 .detail {
+            position: relative;
+            top: 0;
+        }
+
+        .detail-content-2 .header img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .detail-content-2 .detail .content {
+            padding-top: 8%;
+            padding-bottom: 8%;
+        }
+
+        .detail-content-3 .detail {
+            padding-top: 20px;
+        }
+
+        .detail-content-3 .detail-img-1 {
+            text-align: center;
+        }
+
+        .detail-content-3 .detail-img-1 img {
+            max-width: 230px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .detail-content-3 h4 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .detail-content-3 p {
+            text-align: center;
+        }
+
+
+
+        .campaign-footer {
+            background-color: #EFEFEF;
+            color: #333333;
+            padding-top: 20px;
+        }
+
+        .campaign-footer h4 {
+            font-weight: 700;
+        }
+
+        .campaign-footer .detail {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .campaign-footer .detail h4,
+        .detail p {
+            text-align: center;
+        }
+
+        .campaign-footer .followus h4,
+        .followus p {
+            text-align: center;
+        }
+
+
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .header-content {
+                margin-top: 5%;
+            }
+            .header-content img {
+                text-align: left;
+                float: left;
+            }
+            .header-content h1 {
+                font-size: 10vw;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+            .header-content h3 {
+                font-size: 3vw;
+                padding: 15px 20px;
+            }
+            .subheader-top {
+                font-size: 2vw;
+            }
+            .detail-header h3 {
+                font-size: 2.2vw;
+                text-align: center;
+            }
+            .detail-content h4 {
+                text-align: left;
+            }
+            .detail-content p {
+                text-align: left;
+            }
+            .detail-content-2 .detail .content {
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+            .detail-content-2 h4 {
+                text-align: left;
+            }
+            .detail-content-2 p {
+                text-align: left;
+            }
+            .detail-content-3 h4 {
+                text-align: left;
+            }
+            .detail-content-3 p {
+                text-align: left;
+            }
+
+
+        }
+
+        /* Small devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .header-content h3 {
+                padding: 30px;
+            }
+            .subheader-top {
+                font-size: 1.3vw;
+            }
+            .detail-header h3 {
+                font-size: 1.5vw;
+            }
+            .detail-content .detail-img-1 {
+                margin-top: 0;
+                background-color: #ffffff;
+                text-align: center;
+            }
+            .detail-content .detail-img-1 img {
+                max-width: 50%;
+                margin: 0 auto;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .detail-content-2 .detail {
+                position: absolute;
+            }
+
+            .detail-content-2 .detail .content {
+                padding-top: 4.5%;
+                padding-bottom: 4.5%;
+            }
+            .detail-content-3 .detail {
+                padding-top: 20px;
+            }
+            .detail-content-3 .detail-img-1 img {
+                max-width: 60%;
+            }
+            .campaign-footer .detail {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .campaign-footer .detail h4,
+            .detail p {
+                text-align: left;
+            }
+            .campaign-footer .followus h4,
+            .followus p {
+                text-align: right;
+            }
+        }
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .header-content {
+                margin: auto;
+                top: 12%;
+            }
+            .header-content img {
+                text-align: center;
+                float: none;
+                margin: 0 auto;
+            }
+            .header-content h1 {
+                font-size: 9vw;
+                padding-top: 15px;
+                padding-bottom: 10px;
+            }
+            .header-content h3 {
+                font-size: 2.6vw;
+                padding: 15px 20px;
+            }
+            .subheader-top {
+                font-size: 1.2vw;
+            }
+            .detail-header h3 {
+                font-size: 1.7vw;
+            }
+            .detail-content-3 .detail {
+                padding-top: 40px;
+            }
+            .detail-content-2 .detail .content {
+                padding-top: 6.5%;
+                padding-bottom: 6.5%;
+            }
+        }
+
+        /* Large devices (large desktops, 1400px and up) */
+        @media (min-width: 1400px) {
+            .header-content {
+                margin: auto;
+                top: 16%;
+            }
+
+            .header-content h1 {
+                font-size: 7vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid r-l-pad r-r-pad">
+            <div class="header-top">
+                <div class="header-pic">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1920_bg_01.jpg">
+                        <source media="(min-width: 768px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1280_bg_01.jpg">
+                        <source media="(max-width: 768px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_768_bg_01.jpg">
+                        <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1920_bg_01.jpg" alt="Selldor">
+                    </picture>
+                </div>
+                <div class="header-content">
+                    <div class="container-fluid hidden-lg">
+                        <div class="col-xs-12 col-sm-6">
+                            <h1><span class="txt-color-blue">Sell</span><span class="txt-color-white">DOR</span></h1>
+                            <h3><span class="txt-color-white">Improve your distribution process, increase your sales performance,
+                                    speed up your ordering flow... <br/>whilst on the road!</span></h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/iPhone1.png">
+                        </div>
+                    </div>
+                    <div class="container visible-lg">
+                        <div class="col-lg-6">
+                            <h1><span class="txt-color-blue">Sell</span><span class="txt-color-white">DOR</span></h1>
+                            <h3><span class="txt-color-white">Improve your distribution process, increase your sales performance,
+                                    speed up your ordering flow... <br/>whilst on the road!</span></h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/iPhone1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid r-l-pad r-r-pad subheader-top">
+            <div class="container">
+                <strong>SellDOR</strong> is a multiple-purpose Native Mobile APP, designed to solve the challenges that each
+                trading & distribution company faces when dealing with traditional devices.
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container detail-header">
+            <h3>MAIN FEATURES</h3>
+        </div>
+    </section>
+    <section>
+        <div class="container detail-content">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="col-lg-10 col-lg-offset-1 r-l-pad r-r-pad">
+
+                        <h4>Salesman Routing</h4>
+                        <p>
+                            Mainly dedicated to distribution companies, the system guides the sales representatives or the cash van drivers on the daily
+                            itineraries drawn by sequence of scheduled destinations to cover.
+                        </p>
+                        <div class="clearfix">&nbsp;</div>
+                        <h4>Location identification/Time Attendance/Check in-out</h4>
+                        <p>
+                            At each visit, a Check In and Check Out permits to trace the salesman at his time of arrival and departure from a customer
+                            or lead. It also captures his location at the time of checking in, then checkout, and matches
+                            it with the clients GPS coordination.
+                        </p>
+                        <div class="clearfix">&nbsp;</div>
+                        <h4>Products’ Catalog</h4>
+                        <p>
+                            Easy and fast ways to search for items with filters by code, barcode, family, brand or description; next to each item a picture
+                            makes of the SellDor mobile APP the best catalogue for displaying the goods of the company, Online
+                            Quantities, Discounts, Free quantities, clients’deal and Promotions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 detail-img-1">
+                    <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/iPhone2.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container hidden-xs hidden-sm panel-img">
+            <!--<div class="header">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1920_bg_04.jpg">
+                    <source media="(min-width: 768px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1280_bg_04.jpg">
+                    <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1280_bg_04.jpg" alt="Selldor">
+                </picture>
+            </div>-->
+            <div class="detail">
+                <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/iPhone3.png" alt="Selldor">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container detail-content-2">
+            <div class="header hidden-xs hidden-sm">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1920_bg_05.jpg">
+                    <source media="(min-width: 768px)" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1280_bg_05.jpg">
+                    <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/selldor_v4_1280_bg_05.jpg" alt="Selldor">
+                </picture>
+            </div>
+            <div class="detail">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-10 col-lg-offset-1 content">
+                        <h4>Sales Tracking with Sales Order Approval</h4>
+                        <div class="clearfix">&nbsp;</div>
+                        <h4>Cash Van Operation</h4>
+                        <p>
+                            Friendly and fast maneuvering on the tablet’s touch screen for entering Sales order while on the field, and having it instantly
+                            saved on the company’s servers, leading to fast processing of the order in the back office. Invoices,
+                            Sales Order, Receipt with various modes of payments, Sales Return or Request of returns may be
+                            printed on Wi-Fi/Bluetooth printers; these may be mailed to the client on the spot.
+                        </p>
+                        <div class="clearfix">&nbsp;</div>
+                        <h4>Salesman Visit Reports</h4>
+                        <p>
+                            Sales notes and time sheet may be entered where remarks are immediately communicated to the concerned managers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container detail-content-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 detail-img-1">
+                    <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/iPhone4.png">
+                </div>
+                <div class="col-xs-12 col-md-6 detail">
+                    <h4>Dolphin BI & Dashboards</h4>
+                    <p>
+                        Summarized dashboards related to closing day, Global sales reports, statistics by customer, Monthly sales reports, KPIs,
+                        …
+                    </p>
+                    <div class="clearfix">&nbsp;</div>
+                    <h4>Clients Management</h4>
+                    <p>
+                        Get full view of your contacts, address, phone numbers, conversation history, statuses (idle, leads and customers) …Save
+                        also their GPS coordinates.
+                    </p>
+                    <div class="clearfix">&nbsp;</div>
+                    <h4>Accounts Management</h4>
+                    <p>
+                        Credit limit, Clients balance, Statement of account, Outstanding Invoices, sales statistics, orders based on the Workflow
+                        …
+                    </p>
+                    <div class="clearfix">&nbsp;</div>
+                    <h4>Contacts Management </h4>
+                    <p>
+                        Centralize your data by keeping contact persons, their personal info, individual emails professional and personals, mobile
+                        numbers… all in one place, accessible in one click.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid txt-color-white campaign-footer">
+            <div class="container r-l-pad r-r-pad">
+
+                <div class="col-xs-12 text-center">
+                    <h5>
+                        Download on
+                    </h5>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.SellDor3" target="_blank" style="text-decoration:none;">
+                        <img id="" height="63" width="173" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/google-play-badge.png"
+                            srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/google-play-badge.png"
+                            alt="Google Play Store" />
+                    </a>
+                    &nbsp;
+                    <a href="https://itunes.apple.com/ph/app/selldor3/id1315622670?mt=8" target="_blank" style="text-decoration:none;">
+                        <img id="" height="43" width="134" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/app-store-badge.png"
+                            srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/app-store-badge.png"
+                            alt="Google Play Store" />
+                    </a>
+                </div>
+
+                <div class="clearfix">&nbsp;</div>
+
+                <div class="col-xs-12 col-md-3 detail">
+                    <h4>Beirut - Lebanon</h4>
+                    <p>
+                        Badaro City, kfoury - Sabak L khel street, Khatoun building, 6th floor
+                        <br />
+                        <a href="https://www.google.com.lb/maps/dir//33.873408,+35.516195/" target="_blank">Location Map
+                        </a>
+                        <br /> Tel: +961 1 399 855
+                        <br /> Email: sdcg@softwaredesign.com.lb
+                    </p>
+                </div>
+
+                <div class="col-xs-12 col-md-3 detail">
+                    <h4>Dubai - United Arab Emirates<br/>Dolphin Solutions
+                    </h4>
+                    <p>
+                        Tecom, Cayan Business Center, Office 104
+                        <br />
+                        <a href="https://www.google.com.lb/maps/place/Dolphin+Solutions/@25.0952693,55.1736939,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f6b7a2bf2e8c7:0x8e003c3f60cf678a!8m2!3d25.0952693!4d55.1758826"
+                            target="_blank">Location Map</a>
+                        <br /> Tel: +971 4 435 6565
+                        <br /> Email: dolphinsolutions@dolphinclouds.com
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3 detail">
+                    <h4>Riyadh - Saudi Arabia</h4>
+                    <p>
+                        Zaid Bin Thabet Street El-Derabi Bldg., 1st floor, office # 7 Al Malaz Riyadh
+                        <br />
+                        <a href="https://www.google.com.lb/maps/dir//21.562868,+39.173062/" target="_blank">Location Map
+                        </a>
+                        <br /> Tel: +966 11 472 1414
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3 followus">
+                    <h4 class="txt-color-blue">Follow Us</h4>
+                    <p>
+                        <a href="https://www.facebook.com/dolphinconnectpage/" target="_blank" style="text-decoration:none; border-style:none;"><img
+                                height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/facebook-badge.png"
+                                srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/facebook-badge.png"
+                                alt="Software Design Consulting Group - Facebook" /></a>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/company/software-design-consulting-group/" target="_blank" style="text-decoration:none; border-style:none;"><img
+                                height="20" width="25" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/linkedin-badge.png"
+                                srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/linkedin-badge.png"
+                                alt="Software Design Consulting Group - Linkedin" /></a>
+                    </p>
+
+                </div>
+
+                <div class="clearfix">&nbsp;</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
