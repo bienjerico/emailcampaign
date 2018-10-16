@@ -78,11 +78,11 @@
         }
 
         .txt-color-blue {
-            color: #005f97;
+            color: #0d88bf;
         }
 
         .subheader-top {
-            background-color: #005f97;
+            background-color: #0d88bf;
             color: #ffffff;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -90,7 +90,7 @@
         }
 
         .detail-header h3 {
-            color: #005f97;
+            color: #0d88bf;
             padding-top: 20px;
             padding-bottom: 20px;
             text-align: center;
@@ -108,12 +108,12 @@
 
         .detail-content .detail-img-1 {
             margin-top: 20px;
-            background-color: #F9C82D;
+            background-color: #95abba;
             text-align: center;
         }
 
         .detail-content .detail-img-1 img {
-            max-width: 175px;
+            max-width: 280px;
             margin: 0 auto;
             padding-top: 50px;
             padding-bottom: 50px;
@@ -122,7 +122,7 @@
         .panel-img {
             margin-top: 20px;
             position: relative;
-            background-color: #F9C82D;
+            background-color: #95abba;
         }
 
         .panel-img .header {
@@ -150,7 +150,7 @@
 
         .detail-content-2 {
             position: relative;
-            background-color: #005f97;
+            background-color: #0d88bf;
             color: #ffffff;
         }
 
@@ -239,20 +239,20 @@
         /* Small devices (tablets, 768px and up) */
         @media (min-width: 768px) {
             .header-content {
-                margin-top: 5%;
+                margin-top: 3%;
             }
             .header-content img {
-                text-align: left;
-                float: left;
+                text-align: center;
+                width: 35%;
             }
             .header-content h1 {
-                font-size: 10vw;
-                padding-top: 30px;
-                padding-bottom: 10px;
+                font-size: 9vw;
+                padding-top: 0;
+                padding-bottom: 0;
             }
             .header-content h3 {
-                font-size: 3vw;
-                padding: 15px 20px;
+                font-size: 2.6vw;
+                padding: 0px 10px;
             }
             .subheader-top {
                 font-size: 2vw;
@@ -290,7 +290,7 @@
         /* Small devices (desktops, 992px and up) */
         @media (min-width: 992px) {
             .header-content h3 {
-                padding: 30px;
+                padding: 0;
             }
             .subheader-top {
                 font-size: 1.3vw;
@@ -304,7 +304,7 @@
                 text-align: center;
             }
             .detail-content .detail-img-1 img {
-                max-width: 50%;
+                max-width: 70%;
                 margin: 0 auto;
                 padding-top: 0;
                 padding-bottom: 0;
@@ -343,7 +343,7 @@
         @media (min-width: 1200px) {
             .header-content {
                 margin: auto;
-                top: 12%;
+                top: 6%;
             }
             .header-content img {
                 text-align: center;
@@ -352,8 +352,6 @@
             }
             .header-content h1 {
                 font-size: 9vw;
-                padding-top: 15px;
-                padding-bottom: 10px;
             }
             .header-content h3 {
                 font-size: 2.6vw;
@@ -372,18 +370,26 @@
                 padding-top: 6.5%;
                 padding-bottom: 6.5%;
             }
+            .detail-content-3 .detail-img-1 img{
+                max-width: 50%;
+            }
         }
 
         /* Large devices (large desktops, 1400px and up) */
         @media (min-width: 1400px) {
             .header-content {
                 margin: auto;
-                top: 16%;
+                top: 12%;
             }
 
             .header-content h1 {
                 font-size: 7vw;
             }
+
+            .header-content h3{
+                font-size: 2vw;
+            }
+    
         }
     </style>
 </head>
@@ -401,7 +407,7 @@
                     </picture>
                 </div>
                 <div class="header-content">
-                    <div class="container-fluid hidden-lg">
+                    <div class="container">
                         <div class="col-xs-12 col-sm-6">
                             <h1><span class="txt-color-blue">Sell</span><span class="txt-color-white">DOR</span></h1>
                             <h3><span class="txt-color-white">Improve your distribution process, increase your sales performance,
@@ -411,16 +417,7 @@
                             <img src="https://raw.githubusercontent.com/bienjerico/emailcampaign/master/images/selldor_v20_iphone_1.png">
                         </div>
                     </div>
-                    <div class="container visible-lg">
-                        <div class="col-lg-6">
-                            <h1><span class="txt-color-blue">Sell</span><span class="txt-color-white">DOR</span></h1>
-                            <h3><span class="txt-color-white">Improve your distribution process, increase your sales performance,
-                                    speed up your ordering flow... <br/>whilst on the road!</span></h3>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="https://raw.githubusercontent.com/bienjerico/emailcampaign/master/images/selldor_v20_iphone_1.png">
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -497,7 +494,16 @@
             <div class="detail">
                 <div class="row">
                     <div class="col-xs-12 col-lg-10 col-lg-offset-1 content">
+                            <h4>Sales Order Taking</h4>
+                            <p>
+                                    Friendly and fast manoeuvring on the tablet’s touch screen for entering Sales order while on the field, with checking special price list by client, previous 
+                                    selling  prices…The order is instantly saved on the company’s servers, leading to fast processing of the order in the back office.
+                            </p>
+                            <div class="clearfix">&nbsp;</div>
                         <h4>Sales Tracking with Sales Order Approval</h4>
+                        <p>
+                                Fast decision making: Based on the user-defined workflow, sales manager can expedite the approval process, after reviewing the order.
+                        </p>
                         <div class="clearfix">&nbsp;</div>
                         <h4>Cash Van Operation</h4>
                         <p>
@@ -506,11 +512,7 @@
                             Sales Order, Receipt with various modes of payments, Sales Return or Request of returns may be
                             printed on Wi-Fi/Bluetooth printers; these may be mailed to the client on the spot.
                         </p>
-                        <div class="clearfix">&nbsp;</div>
-                        <h4>Salesman Visit Reports</h4>
-                        <p>
-                            Sales notes and time sheet may be entered where remarks are immediately communicated to the concerned managers.
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -520,14 +522,15 @@
         <div class="container detail-content-3">
             <div class="row">
                 <div class="col-xs-12 col-md-6 detail-img-1">
-                    <img src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/SellDor/images/iPhone4.png">
+                    <img src="https://raw.githubusercontent.com/bienjerico/emailcampaign/master/images/selldor_v20_iphone_4.png">
                 </div>
                 <div class="col-xs-12 col-md-6 detail">
-                    <h4>Dolphin BI & Dashboards</h4>
-                    <p>
-                        Summarized dashboards related to closing day, Global sales reports, statistics by customer, Monthly sales reports, KPIs,
-                        …
-                    </p>
+                        <div class="clearfix">&nbsp;</div>
+                        <h4>Salesman Visit Reports</h4>
+                        <p>
+                            Sales notes and time sheet may be entered where remarks are immediately communicated to the concerned managers.
+                        </p>
+                    
                     <div class="clearfix">&nbsp;</div>
                     <h4>Clients Management</h4>
                     <p>
@@ -546,6 +549,13 @@
                         Centralize your data by keeping contact persons, their personal info, individual emails professional and personals, mobile
                         numbers… all in one place, accessible in one click.
                     </p>
+                    <div class="clearfix">&nbsp;</div>
+                    <h4>Dolphin BI & Dashboards</h4>
+                    <p>
+                        Summarized dashboards related to closing day, Global sales reports, statistics by customer, Monthly sales reports, KPIs,
+                        …
+                    </p>
+                    <div class="clearfix">&nbsp;</div>
                 </div>
             </div>
         </div>
