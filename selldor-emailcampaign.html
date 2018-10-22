@@ -8,175 +8,198 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <style>
-    /* cyrillic-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-    /* cyrillic */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-    /* greek-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
-    unicode-range: U+1F00-1FFF;
-    }
-    /* greek */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
-    unicode-range: U+0370-03FF;
-    }
-    /* vietnamese */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-    }
-    /* latin-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /* cyrillic-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-    /* cyrillic */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-    /* greek-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
-    unicode-range: U+1F00-1FFF;
-    }
-    /* greek */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
-    unicode-range: U+0370-03FF;
-    }
-    /* vietnamese */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-    }
-    /* latin-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /* cyrillic-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-    /* cyrillic */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-    /* greek-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
-    unicode-range: U+1F00-1FFF;
-    }
-    /* greek */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
-    unicode-range: U+0370-03FF;
-    }
-    /* vietnamese */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-    }
-    /* latin-ext */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
+
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
     </style>
 
     <!--[if mso]>
@@ -205,7 +228,8 @@
                                                 <span>&nbsp;</span>
                                             </td>
                                             <td style="line-height: 0px;" width="130">
-                                                <img height="40" width="130" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/sdcg-logo.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/sdcg-logo.jpg"
+                                                <img height="40" width="130" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/sdcg-logo.jpg"
+                                                    srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/sdcg-logo.jpg"
                                                     alt="Software Design Consulting Group" />
                                             </td>
 
@@ -235,8 +259,9 @@
                                             </td>
                                             <td style="line-height: 0px;" width="20">
                                                 <a href="tel:+97144356565" style="text-decoration:none; border-style:none;">
-                                                <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/phone-square-badge.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/phone-square-badge.jpg"
-                                                    alt="Software Design Consulting Group" /></a>
+                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/phone-square-badge.jpg"
+                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/phone-square-badge.jpg"
+                                                        alt="Software Design Consulting Group" /></a>
                                             </td>
                                             <!--td space-->
                                             <td style="line-height: 1.2;" width="20">
@@ -244,9 +269,10 @@
                                             </td>
                                             <!--td space-->
                                             <td style="line-height: 1.2;" width="130" class="fallback-text">
-                                                <a href="tel:+97144356565" style="text-decoration:none; border-style:none;"><span style="font-family: 'Roboto', Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: 400; color:#4d4d4d">
-                                                    +971 (0) 4 435 6565
-                                                </span></a>
+                                                <a href="tel:+97144356565" style="text-decoration:none; border-style:none;"><span
+                                                        style="font-family:  Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: 400; color:#4d4d4d">
+                                                        +971 (0) 4 435 6565
+                                                    </span></a>
                                             </td>
                                             <!--td space-->
                                             <td style="line-height: 1.2;" width="20">
@@ -269,55 +295,77 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td style="line-height: 0px;" valign="top" align="center" width="358" height="277">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" align="text" height="277" width="358" style="line-height:1.2;" bgcolor="#95abba">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" align="text" height="277" width="358" style="line-height:1;" bgcolor="#95abba">
                                                                         <tbody>
+                                                                            
                                                                             <!-- tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: 0;" width="358" height="35" colspan="3"  >
+                                                                                <td style="line-height: 0;" width="358" height="25">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
+
                                                                             <tr>
-                                                                                <!--td padding-->
-                                                                                <td style="line-height: 0px;" width="64" height="41">
-                                                                                    <span>&nbsp;</span>
-                                                                                </td>
-                                                                                <!--content 3-->
-                                                                                <td style="line-height: 1.2;" valign="middle" width="230" height="41" align="center">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 60px;font-style: normal;font-variant: normal;font-weight: 700; color:#005f97">Sell</span><span
-                                                                                        style="font-family: 'Roboto', Arial, sans-serif;font-size: 60px;font-style: normal;font-variant: normal;font-weight: 700; color:#ffffff">DOR
-                                                                                    </span>
-                                                                                </td>
-                                                                                <!--td padding-->
-                                                                                <td style="line-height: 0px;" width="64" height="41">
-                                                                                    <span>&nbsp;</span>
+                                                                                <td style="line-height: 0;" width="358" height="41">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" align="text" height="41" width="358" style="line-height:1;" bgcolor="#95abba">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <!--td padding-->
+                                                                                                <td style="line-height: 0px;" width="64" height="41">
+                                                                                                    <span>&nbsp;</span>
+                                                                                                </td>
+                                                                                                <!--content 3-->
+                                                                                                <td style="line-height: 1;" valign="middle" width="180" height="41" align="center">
+                                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 45px;font-style: normal;font-variant: normal;font-weight: 700; color:#005f97">Sell</span><span
+                                                                                                        style="font-family:  Arial, sans-serif;font-size: 45px;font-style: normal;font-variant: normal;font-weight: 700; color:#ffffff">DOR
+                                                                                                    </span>
+                                                                                                </td>
+                                                                                                <!--td padding-->
+                                                                                                <td style="line-height: 0px;" width="64" height="41">
+                                                                                                    <span>&nbsp;</span>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
                                                                                 </td>
                                                                             </tr>
-                                                                             <!-- tr space-->
-                                                                             <tr>
-                                                                                <td style="line-height: 0;" width="358" height="20" colspan="3"  >
-                                                                                    <span>&nbsp;</span>
-                                                                                </td>
-                                                                            </tr>
+
+                                                                            <!-- tr space-->
                                                                             <tr>
-                                                                                <!--td padding-->
-                                                                                <td style="line-height: 0px;" width="29" height="122">
-                                                                                    <span>&nbsp;</span>
-                                                                                </td>
-                                                                                <!--content 3-->
-                                                                                <td style="line-height: 1.2;" valign="top" width="300" height="122" align="center"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 21px;font-style: normal;font-variant: normal;font-weight: 400; color:#ffffff">
-                                                                                        Improve your distribution process, increase your sales performance, speed up your ordering flow... whilst on the road!
-                                                                                    </span>
-                                                                                </td>
-                                                                                <!--td padding-->
-                                                                                <td style="line-height: 0px;" width="29" height="122">
+                                                                                <td style="line-height: 0;" width="358" height="20">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
-                                                                             <!-- tr space-->
-                                                                             <tr>
-                                                                                <td style="line-height: 0;" width="358" height="25" colspan="3"  >
+
+                                                                            <tr>
+                                                                                <td style="line-height: 0;" width="358" height="122">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" align="text" height="122" width="358" style="line-height:1;" bgcolor="#95abba">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <!--td padding-->
+                                                                                                <td style="line-height: 0px;" width="29" height="122">
+                                                                                                    <span>&nbsp;</span>
+                                                                                                </td>
+                                                                                                <!--content 3-->
+                                                                                                <td style="line-height: 1;" valign="top" width="300" height="122" align="center" class="fallback-text">
+                                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 700; color:#ffffff">
+                                                                                                        Improve your distribution process<br/><br/>Increase your sales performance<br/><br/>Speed up your ordering
+                                                                                                        flow... <br/><br/>Whilst on the road!
+                                                                                                    </span>
+                                                                                                </td>
+                                                                                                <!--td padding-->
+                                                                                                <td style="line-height: 0px;" width="29" height="122">
+                                                                                                    <span>&nbsp;</span>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <!-- tr space-->
+                                                                            <tr>
+                                                                                <td style="line-height: 0;" width="358" height="20">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -325,7 +373,8 @@
                                                                     </table>
                                                                 </td>
                                                                 <td style="line-height: 0px;" valign="top" width="342" height="277" bgcolor="#95abba">
-                                                                    <img height="277" width="342" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-1.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-1.jpg"
+                                                                    <img height="277" width="342" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-1.jpg"
+                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-1.jpg"
                                                                         alt="Software Design Consulting Group" />
                                                                 </td>
                                                             </tr>
@@ -344,29 +393,30 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="700" align="center" style="line-height:0px;" bgcolor="#0d88bf">
                                         <tbody>
                                             <tr>
-                                                <td style="line-height: 0px;" height="25px" bgcolor="#0d88bf" colspan="3">
+                                                <td style="line-height: 0px;" height="25" width="700" bgcolor="#0d88bf" colspan="3">
                                                     <span>&nbsp;</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <!--td padding-->
-                                                <td style="line-height: 0px;" width="15" bgcolor="#0d88bf">
+                                                <td style="line-height: 0px;" width="50" bgcolor="#0d88bf">
                                                     <span>&nbsp;</span>
                                                 </td>
-                                                <td style="line-height: 1.2;" bgcolor="#0d88bf" valign="middle" width="320" align="center"  class="fallback-text">
-                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 16px;font-style: normal;font-variant: normal;font-weight: 700; color:#005f97">Sell</span><span style="font-family: 'Roboto', Arial, sans-serif;font-size: 16px;font-style: normal;font-variant: normal;font-weight: 700; color:#ffffff">DOR</span>
-                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 16px;font-style: normal;font-variant: normal;font-weight: 400; color:#ffffff">
-                                                         is a multiple-purpose Native Mobile APP, designed to solve the challenges that each trading & distribution company
-                                                         faces when dealing with traditional devices.
-                                                     </span>
+                                                <td style="line-height: 1.2;" bgcolor="#0d88bf" valign="middle" width="600" align="center" class="fallback-text">
+                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 700; color:#023444">Sell</span><span
+                                                        style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 700; color:#ffffff">DOR</span>
+                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#ffffff">
+                                                        is a multiple-purpose Native Mobile APP, designed to solve the challenges that each trading & distribution company faces
+                                                        when dealing with traditional devices.
+                                                    </span>
                                                 </td>
                                                 <!--td padding-->
-                                                <td style="line-height: 0px;" width="15" bgcolor="#0d88bf">
+                                                <td style="line-height: 0px;" width="50" bgcolor="#0d88bf">
                                                     <span>&nbsp;</span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="line-height: 0px;" height="25px" bgcolor="#0d88bf" colspan="3">
+                                                <td style="line-height: 0px;" height="25" width="700" bgcolor="#0d88bf" colspan="3">
                                                     <span>&nbsp;</span>
                                                 </td>
                                             </tr>
@@ -392,8 +442,8 @@
                                                 <td style="line-height: 0px;" width="15">
                                                     <span>&nbsp;</span>
                                                 </td>
-                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="middle" width="320" align="left"  class="fallback-text">
-                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 26px;font-style: normal;font-variant: normal;font-weight: 700; color:#0d88bf">
+                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="middle" width="320" align="left" class="fallback-text">
+                                                    <span style="font-family:  Arial, sans-serif;font-size: 26px;font-style: normal;font-variant: normal;font-weight: 700; color:#0d88bf">
                                                         MAIN FEATURES
                                                     </span>
                                                 </td>
@@ -427,7 +477,7 @@
                                                                 <td style="line-height: 0px;" valign="top" width="472" height="591" bgcolor="#ffffff">
                                                                     <table border="0" cellpadding="0" cellspacing="0" width="472" height="594" align="center" style="line-height:0px;" bgcolor="#ffffff">
                                                                         <tbody>
-                                                                            
+
 
                                                                             <tr>
                                                                                 <!--td padding-->
@@ -435,7 +485,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -443,8 +494,8 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                         Salesman Routing
                                                                                     </span>
                                                                                 </td>
@@ -455,7 +506,7 @@
                                                                             </tr>
                                                                             <!--tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -466,7 +517,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -474,8 +526,8 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                         Location identification/Time Attendance/ Check in-out
                                                                                     </span>
                                                                                 </td>
@@ -486,7 +538,7 @@
                                                                             </tr>
                                                                             <!--tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -497,7 +549,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -505,8 +558,8 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                         Products’ Catalog
                                                                                     </span>
                                                                                 </td>
@@ -517,7 +570,7 @@
                                                                             </tr>
                                                                             <!--tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -528,7 +581,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -536,8 +590,8 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                         Sales Order Taking
                                                                                     </span>
                                                                                 </td>
@@ -548,7 +602,7 @@
                                                                             </tr>
                                                                             <!--tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -559,7 +613,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -567,8 +622,8 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                         Sales Tracking with Sales Order Approval
                                                                                     </span>
                                                                                 </td>
@@ -579,7 +634,7 @@
                                                                             </tr>
                                                                             <!--tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -590,7 +645,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -598,9 +654,9 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
-                                                                                        Cash Van Operation 
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                        Cash Van Operation
                                                                                     </span>
                                                                                 </td>
                                                                                 <!--td padding-->
@@ -610,7 +666,7 @@
                                                                             </tr>
                                                                             <!--tr space-->
                                                                             <tr>
-                                                                                <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                             </tr>
@@ -621,7 +677,8 @@
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
                                                                                 <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                    <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                         alt="Software Design Consulting Group"
                                                                                     />
                                                                                 </td>
@@ -629,8 +686,8 @@
                                                                                 <td style="line-height: 0px;" width="15">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                    <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                    <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                         Salesman Visit Reports
                                                                                     </span>
                                                                                 </td>
@@ -638,10 +695,10 @@
                                                                                 <td style="line-height: 0px;" width="30">
                                                                                     <span>&nbsp;</span>
                                                                                 </td>
-                                                                                
+
                                                                                 <!--tr space-->
                                                                                 <tr>
-                                                                                    <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                    <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
@@ -652,7 +709,8 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                     <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                            srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                             alt="Software Design Consulting Group"
                                                                                         />
                                                                                     </td>
@@ -660,8 +718,8 @@
                                                                                     <td style="line-height: 0px;" width="15">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
-                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                        <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                        <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                             Clients Management
                                                                                         </span>
                                                                                     </td>
@@ -670,10 +728,10 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
-    
+
                                                                                 <!--tr space-->
                                                                                 <tr>
-                                                                                    <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                    <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
@@ -684,7 +742,8 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                     <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                            srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                             alt="Software Design Consulting Group"
                                                                                         />
                                                                                     </td>
@@ -692,8 +751,8 @@
                                                                                     <td style="line-height: 0px;" width="15">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
-                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                        <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                        <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                             Accounts Management
                                                                                         </span>
                                                                                     </td>
@@ -702,10 +761,10 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
-    
+
                                                                                 <!--tr space-->
                                                                                 <tr>
-                                                                                    <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                    <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
@@ -716,7 +775,8 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                     <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                            srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                             alt="Software Design Consulting Group"
                                                                                         />
                                                                                     </td>
@@ -724,8 +784,8 @@
                                                                                     <td style="line-height: 0px;" width="15">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
-                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                        <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                        <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                             Contacts Management
                                                                                         </span>
                                                                                     </td>
@@ -736,7 +796,7 @@
                                                                                 </tr>
                                                                                 <!--tr space-->
                                                                                 <tr>
-                                                                                    <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                    <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
@@ -747,7 +807,8 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                     <td style="line-height: 0px;" valign="top" width="20" bgcolor="#ffffff">
-                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                        <img height="20" width="20" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
+                                                                                            srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/check-square-badge-blue-2.jpg"
                                                                                             alt="Software Design Consulting Group"
                                                                                         />
                                                                                     </td>
@@ -755,8 +816,8 @@
                                                                                     <td style="line-height: 0px;" width="15">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
-                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left"  class="fallback-text">
-                                                                                        <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="377" align="left" class="fallback-text">
+                                                                                        <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
                                                                                             Dolphin BI & Dashboards
                                                                                         </span>
                                                                                     </td>
@@ -765,10 +826,10 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
-    
+
                                                                                 <!--tr space-->
                                                                                 <tr>
-                                                                                    <td style="line-height: .8;" height="5" width="377" bgcolor="#ffffff" colspan="5">
+                                                                                    <td style="line-height:1;" height="5" width="377" bgcolor="#ffffff" colspan="5">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
@@ -779,10 +840,10 @@
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
 
-                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="390" align="left"  class="fallback-text" colspan="3">
-                                                                                        <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 700; color:#333333">
-                                                                                                SellDOR</span><span style="font-family: 'Roboto', Arial, sans-serif;font-size: 18px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
-                                                                                                    can run independently or integrated Visual Dolphin suites and all other major ERP.
+                                                                                    <td style="line-height: 1.2;" bgcolor="#ffffff" valign="top" width="390" align="left" class="fallback-text" colspan="3">
+                                                                                        <span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 700; color:#333333">
+                                                                                            SellDOR</span><span style="font-family:  Arial, sans-serif;font-size: 14px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333">
+                                                                                            can run independently or integrated Visual Dolphin suites and all other major ERP.
                                                                                         </span>
                                                                                     </td>
                                                                                     <!--td padding-->
@@ -792,7 +853,7 @@
                                                                                 </tr>
                                                                                 <!--tr space-->
                                                                                 <tr>
-                                                                                    <td style="line-height: .8;" height="10" bgcolor="#ffffff" colspan="5">
+                                                                                    <td style="line-height:1;" height="5" bgcolor="#ffffff" colspan="5">
                                                                                         <span>&nbsp;</span>
                                                                                     </td>
                                                                                 </tr>
@@ -806,12 +867,31 @@
                                                                                                         <span>&nbsp;</span>
                                                                                                     </td>
 
-                                                                                                    <td style="line-height: 3;" bgcolor="#0d88bf" valign="top" width="230" align="center"  class="fallback-text">
-                                                                                                        <a href="http://clientengagement.azurewebsites.net/Pages/SellDor.html" target="_blank" style="text-decoration:none; border-style:none;">
-                                                                                                            <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: 400; color:#ffffff">
-                                                                                                                Click Here For More Details
-                                                                                                            </span>
-                                                                                                        </a>
+                                                                                                    <td style="line-height: 0;" bgcolor="#0d88bf" valign="top" width="230" align="center" class="fallback-text">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="230" align="center" style="line-height:0px;" bgcolor="#0d88bf">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td style="line-height:1;" height="10" bgcolor="#0d88bf">
+                                                                                                                        <span>&nbsp;</span>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                                <tr>
+                                                                                                                    <td style="line-height: 1;" bgcolor="#0d88bf" valign="top" width="230" align="center" class="fallback-text">
+                                                                                                                        <a href="http://clientengagement.azurewebsites.net/Pages/SellDor.html" target="_blank" style="text-decoration:none; border-style:none;">
+                                                                                                                            <span style="font-family:  Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: 400; color:#ffffff">
+                                                                                                                                Click Here For More Details
+                                                                                                                            </span>
+                                                                                                                        </a>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                                <tr>
+                                                                                                                    <td style="line-height:1;" height="10" bgcolor="#0d88bf">
+                                                                                                                        <span>&nbsp;</span>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                     
                                                                                                     </td>
                                                                                                     <!--td padding-->
                                                                                                     <td style="line-height: 0px;" width="110">
@@ -829,7 +909,8 @@
 
                                                                 </td>
                                                                 <td style="line-height: 0px;" valign="top" align="right" width="228" height="591" bgcolor="#ffffff">
-                                                                    <img height="591" width="228" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-2.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-2.jpg"
+                                                                    <img height="591" width="228" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-2.jpg"
+                                                                        srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldoremailcampaign/images/img-email-2.jpg"
                                                                         alt="Software Design Consulting Group" />
                                                                 </td>
                                                                 </tr>
@@ -857,17 +938,18 @@
                                             <tbody>
                                                 <tr>
                                                     <!--td padding-->
-                                                    <td style="line-height: 0px;" width="15" bgcolor="#E6E6E6">
+                                                    <td style="line-height: 0px;" width="190" bgcolor="#E6E6E6">
                                                         <span>&nbsp;</span>
                                                     </td>
-                                                    <td style="line-height: 1.2;" bgcolor="#E6E6E6" valign="top" width="320" align="center" >
+                                                    <td style="line-height: 1.2;" bgcolor="#E6E6E6" valign="top" width="320" align="center">
 
-                                                        <span style="font-family: 'Roboto', Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333"  class="fallback-text">
+                                                        <span style="font-family:  Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: 400; color:#333333"
+                                                            class="fallback-text">
                                                             Available on
                                                         </span>
                                                     </td>
                                                     <!--td padding-->
-                                                    <td style="line-height: 0px;" width="15" bgcolor="#E6E6E6">
+                                                    <td style="line-height: 0px;" width="190" bgcolor="#E6E6E6">
                                                         <span>&nbsp;</span>
                                                     </td>
                                                 </tr>
@@ -900,7 +982,8 @@
                                                     </td>
                                                     <td style="line-height: 1.2;" bgcolor="#E6E6E6" valign="middle" width="146" align="center">
                                                         <a href="https://itunes.apple.com/ph/app/selldor3/id1315622670?mt=8" target="_blank" style="text-decoration:none;">
-                                                            <img id="" height="43" width="134" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/app-store-badge.jpg" srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/app-store-badge.jpg"
+                                                            <img id="" height="43" width="134" src="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/app-store-badge.jpg"
+                                                                srcset="http://remoteapp.softwaredesign.ae/EmailTemplateImages/selldor_v6_slice/app-store-badge.jpg"
                                                                 alt="Google Play Store" />
                                                         </a>
                                                     </td>
@@ -929,13 +1012,12 @@
                                                     <td style="line-height: 0px;" width="15" bgcolor="#E6E6E6">
                                                         <span>&nbsp;</span>
                                                     </td>
-                                                    <td style="line-height: 1.2;" align="center" width="670" bgcolor="#E6E6E6"  class="fallback-text">
-                                                        <span style="text-align:center;font-family: 'Roboto', Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: normal; color:#333333">
+                                                    <td style="line-height: 1.2;" align="center" width="670" bgcolor="#E6E6E6" class="fallback-text">
+                                                        <span style="text-align:center;font-family:  Arial, sans-serif;font-size: 12px;font-style: normal;font-variant: normal;font-weight: normal; color:#333333">
                                                             To ensure you continue to receive our newsletter properly please add
 
                                                             <a href="mailto:dolphinsolutions@dolphinclouds.com" target="_top" style="color:#0622F4; text-decoration: none;">dolphinsolutions@dolphinclouds.com</a>
-                                                            to your address book or safe senders list. If you do not wish
-                                                            to receive further newsletters,
+                                                            to your address book or safe senders list. If you do not wish to receive further newsletters,
                                                             <br>Click here to
                                                             <a style="color:#0622F4; text-decoration: none;" target="_blank" href="http://sdcgoutsider-vat.azurewebsites.net/Pages/Main.html#/Unsubscribe">UNSUBSCRIBE</a>
                                                             from the list.
