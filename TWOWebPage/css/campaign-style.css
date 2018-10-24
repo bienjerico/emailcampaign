@@ -1,6 +1,7 @@
 ﻿        .header-top {
             position: relative;
         }
+        
 
         .header-pic {
             position: relative;
@@ -18,6 +19,7 @@
             width: 100%;
             text-align: center;
         }
+        
 
         .header-content img {
             width: 50%;
@@ -38,6 +40,59 @@
             padding-bottom: 30px;
         }
 
+        .header-content-2 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .header-content-2 .content-title-top {
+            position: absolute;
+            top:15px;
+            left: 0;
+            right: 0;
+        }
+        .header-content-2 .content-title-bg {
+            background-color: #2368CC;
+            opacity: 0.75;
+            filter: alpha(opacity =75);
+            width: 100%;
+            height: 160px;
+        }
+
+        .header-content-2 .content-title-top h2{
+            color:#ffffff;
+            font-weight: 700;
+            font-size: 36px;
+        }
+        .header-content-2 .content-title-top h3{
+            color:#ffffff;
+            font-weight: 700;
+            padding:0;
+            font-size: 24px;
+            margin-top:0px; 
+        }
+        .header-content-2 .content-title-middle {
+            padding-top:20%;
+        }
+
+        .header-content-2 .content-title-middle h3{
+            color:#ffffff;
+            font-weight: 700;
+            padding:0;
+            font-size: 4.5vw;
+            margin-top:0px; 
+        }
+
+
+        .header-content-2 .content-title-bottom {
+            padding-top:20%;
+        }
+        .header-content-2 .content-title-bottom p {
+            color:#ffffff;
+            font-size: 4vw;
+        }
+      
         .txt-color-white {
             color: #ffffff;
         }
