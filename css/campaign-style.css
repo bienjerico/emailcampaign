@@ -97,8 +97,8 @@
         .header-content-2 .content-title-bottom p {
             color:#ffffff;
             font-size: 4vw;
-        }
-      
+        }      
+
         .txt-color-white {
             color: #ffffff;
         }
@@ -106,11 +106,21 @@
         .txt-color-blue {
             color: #005f97;
         }
+        .txt-color-blue-2{
+            color: #0d88bf;
+        }
         
         .bg-color-orange{
             background-color: #FC9903;
         }
+        .bg-color-lightgray{
+        background-color: #e0e0e0;
+        }
 
+        .bg-color-darkgray{
+            background-color: #b7b7b7;
+            }
+    
         .subheader-top {
             background-color: #0d88bf;
             color: #ffffff;
@@ -252,7 +262,6 @@
         }
 
         .campaign-footer {
-            background-color: #EFEFEF;
             color: #333333;
             padding-top: 20px;
         }
@@ -293,6 +302,45 @@
             box-shadow: 0 0 3px 3px #DEDEDE;
         }
 
+        .header-content-3{
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+            left: 0;
+        }
+
+        .header-content-3 .content-main-title{
+            text-align: center;
+            margin: 0 auto;
+            background: #0d80b7;
+            -webkit-border-radius: 5px 5px 5px 5px;
+            -moz-border-radius: 5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
+            padding:10px 5px;
+            width: 60%;
+        }
+
+        .header-content-3 .content-main-title h2{
+            font-size:6vw;
+            font-weight: 700;
+            margin:0;
+        }
+
+        .header-content-3 h1{
+            font-size:10vw;
+            font-weight: 700;
+        }
+      
+        .header-content-3 p{
+            font-size:4vw;
+        }
+
+        .detail-content .img-responsive.img-mobile{
+            max-width: 40%;
+            margin: 0 auto;
+        }
 
         /* Small devices (tablets, 768px and up) */
         @media (min-width: 768px) {
@@ -388,6 +436,27 @@
                 text-align: right;
             }
 
+            .header-content-3 {
+                top: 20%;
+            }
+
+            .header-content-3 .content-main-title{
+                width: 30%;
+            }
+
+            .header-content-3 .content-main-title h2{
+                font-size: 2.5vw;
+            }
+
+            .header-content-3 h1 {
+                font-size: 4.3vw;
+            }
+
+            .header-content-3 p {
+                font-size: 2vw;
+            }
+
+
         }
 
         /* Small devices (desktops, 992px and up) */
@@ -473,6 +542,17 @@
                 padding-top:40px;
                 padding-bottom:40px;
             }
+
+            .header-content-3 {
+                top: 15%;
+            }
+
+            .header-content-3 .content-main-title{
+                width: 65%;
+            }
+            .header-content-3 p{
+                font-size: 1.5vw;
+            }
         }
 
         /* Large devices (large desktops, 1200px and up) */
@@ -526,6 +606,10 @@
                 padding-top:70px;
                 padding-bottom:70px;
             }
+
+            .header-content-3 {
+                top:20%;
+            }
         }
 
         /* Large devices (large desktops, 1400px and up) */
@@ -564,7 +648,24 @@
             .header-content-2 .content-title-bottom p {
                 font-size: 1vw;
             }
+            .header-content-3{
+                top:20%;
+            }
+            .header-content-3 .content-main-title{
+                width: 290px;
+            }
 
+            .header-content-3 .content-main-title h2{
+                font-size: 35px;
+            }
+
+            .header-content-3 h1{
+                font-size: 60px;
+            }
+
+            .header-content-3 p{
+                font-size: 20px;
+            }
         }
 
 
