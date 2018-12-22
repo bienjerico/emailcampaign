@@ -342,6 +342,13 @@
             margin: 0 auto;
         }
 
+        .thumbnail.content-box{
+            padding:15px;
+        }
+        .thumbnail.content-box .img-portrait{
+            max-width: 200px;
+        }
+
         /* Small devices (tablets, 768px and up) */
         @media (min-width: 768px) {
             .header-content {
@@ -456,6 +463,9 @@
                 font-size: 2vw;
             }
 
+            .thumbnail.content-box{
+                height: 700px;
+            }
 
         }
 
@@ -552,6 +562,10 @@
             }
             .header-content-3 p{
                 font-size: 1.5vw;
+            }
+
+            .thumbnail.content-box{
+                height: 680px;
             }
         }
 
